@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url( 'https://fonts.googleapis.com/css?family=EB+Garamond');
+$text-color: #111111;
+$background-color: #e7e5d6;
 
 html {
     line-height: 1;
@@ -10,13 +12,17 @@ html {
     height: 100%;
     width: 100%;
     vertical-align: baseline;
+    color: $text-color;
+    background-color: $background-color;
 }
+
 body {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
 }
+
 h1 {
     font-size: 3em;
     line-height: 1.05;
@@ -25,6 +31,7 @@ h1 {
     border: 0;
     vertical-align: bottom;
 }
+
 h2 {
     font-size: 2.25em;
     line-height: 1.25;
@@ -33,6 +40,7 @@ h2 {
     border: 0;
     vertical-align: baseline;
 }
+
 h3 {
     font-size: 1.75em;
     line-height: 1.25;
@@ -41,6 +49,7 @@ h3 {
     border: 0;
     vertical-align: baseline;
 }
+
 h4 {
     font-size: 1.125em;
     line-height: 1.22222222;
@@ -49,44 +58,136 @@ h4 {
     border: 0;
     vertical-align: baseline;
 }
-h5, h6, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, header, footer, ins, kbd, q, s, samp, small, strong, var, b, u, i, dl, dt, dd, ol, ul, label, legend, caption, details, figcaption, mark, main, p, time, li {
+
+a,
+abbr,
+address,
+b,
+blockquote,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dl,
+dt,
+em,
+figcaption,
+footer,
+h5,
+h6,
+header,
+i,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strong,
+time,
+u,
+ul,
+var {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
     font-size: 1em;
 }
-div, object, iframe, img, sub, sup, fieldset, form, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, hgroup, menu, nav, output, ruby, section, summary, audio, video {
+
+article,
+aside,
+audio,
+canvas,
+div,
+embed,
+fieldset,
+figure,
+form,
+hgroup,
+iframe,
+img,
+menu,
+nav,
+object,
+output,
+ruby,
+section,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+video {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
     display: block;
 }
-menu, ol, ul {
+
+menu,
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 :focus {
     /* remember to define focus styles! */
     outline: none;
     /* this is to help you remember to do that! */
     background-color: orange;
 }
-a:active, a:hover {
+
+a:active,
+a:hover {
     outline-width: 0;
 }
 
@@ -94,7 +195,9 @@ a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-sub, sup {
+
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -103,9 +206,11 @@ sub, sup {
     padding: 0;
     border: 0;
 }
+
 sub {
     bottom: -0.25em;
 }
+
 sup {
     top: -0.5em;
 }
@@ -115,34 +220,45 @@ table {
     border-spacing: 0;
 }
 
-a img, :link img, :visited img {
-    border: none
+:link img,
+:visited img,
+a img {
+    border: none;
 }
 
-header {
-    background-color: #fde7bf;
-
-}
-
-footer {
-	background-color: #acd0bf;
-}
-/* Keeo the footer footed*/
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-footer {
-  margin-top: auto;
-}
 
 /* Navbar */
 .navbar {
-    background-color: #fdd181;
-    padding: 1em 0;
+
+    padding: 0.5rem;
 }
+
 .navbar li {
-	display: inline-block;
-	padding: 0 1em;
+    display: inline-block;
+    padding: 0.25rem;
+    font-size: 1.25em;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        padding: .05rem .25rem .15rem .25rem;
+        border: 2px solid transparent;
+    }
+
+    a:focus,
+    a:hover,
+    a.current {
+        border: 2px solid $text-color;
+        border-radius: 3px;
+    }
+}
+/* Keep the footer footed*/
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
 }

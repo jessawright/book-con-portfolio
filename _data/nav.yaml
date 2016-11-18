@@ -1,0 +1,12 @@
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Contact
+  url: /contact/
+- title: Blog
+  url: /blog/
+- title: Sample Collection
+  url: /sample-collection/
+- title: Static Files
+  url: /static-files
