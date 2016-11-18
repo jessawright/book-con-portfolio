@@ -1,12 +1,14 @@
-// CSS reset
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 html {
     line-height: 1;
     font-size: 100%;
-    font-family: sans-serif;
+    font-family: "EB Garamond", Garamond, "Adobe Garamond Pro", serif;
     margin: 0;
     padding: 0;
     border: 0;
+    height: 100%;
+    width: 100%;
     vertical-align: baseline;
 }
 body {
@@ -19,7 +21,7 @@ h1 {
     font-size: 3em;
     line-height: 1.05;
     margin: 0;
-    padding: .5em 0;
+    padding: 0;
     border: 0;
     vertical-align: bottom;
 }
@@ -27,7 +29,7 @@ h2 {
     font-size: 2.25em;
     line-height: 1.25;
     margin: 0;
-    padding: .5em 0;
+    padding: 0;
     border: 0;
     vertical-align: baseline;
 }
@@ -117,7 +119,6 @@ a img, :link img, :visited img {
     border: none
 }
 
-// CSS for clarifying template sections
 header {
     background-color: #fde7bf;
 
@@ -126,8 +127,17 @@ header {
 footer {
 	background-color: #acd0bf;
 }
+/* Keeo the footer footed*/
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+}
 
-// CSS for making things more readable
+/* Navbar */
 .navbar {
     background-color: #fdd181;
     padding: 1em 0;
