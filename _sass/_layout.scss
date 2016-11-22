@@ -227,7 +227,22 @@ a img {
 
 /* Nav */
 nav {
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+/*  background: url("/images/horizontal-rule.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100px 30px;
+  background-position: center; */
+
+
+  background-image: url("/images/horizontal-rule.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto 10px;
+
+
+
+
+
 }
 
 .navbar {
@@ -248,7 +263,7 @@ nav {
     a:focus,
     a:hover,
     a.current {
-      background-image: url("/images/border-vector-single.svg");
+      background-image: url("/images/ornamental-underline.svg");
       background-repeat: no-repeat;
       display: block;
       background-size: 4em auto;
