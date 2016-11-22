@@ -1,6 +1,9 @@
 @import url( 'https://fonts.googleapis.com/css?family=EB+Garamond');
-$text-color: #111111;
-$background-color: #e7e5d6;
+$text-color: #180f0a;
+/* $text-color: rgba(24, 15, 10, 1)*/
+
+$background-color: #fffaf0;
+/* $background-color: 	rgba(255, 250, 240, 1)*/
 
 html {
     line-height: 1;
@@ -13,7 +16,7 @@ html {
     width: 100%;
     vertical-align: baseline;
     color: $text-color;
-    background-color: $background-color;
+    background: url("/images/paper-texture.png"), $background-color;
 }
 
 body {
@@ -191,11 +194,6 @@ a:hover {
     outline-width: 0;
 }
 
-a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-
 sub,
 sup {
     font-size: 75%;
@@ -227,29 +225,34 @@ a img {
 }
 
 
-/* Navbar */
-.navbar {
+/* Nav */
+nav {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+}
 
+.navbar {
     padding: 0.5rem;
 }
 
 .navbar li {
-    display: inline-block;
-    padding: 0.25rem;
-    font-size: 1.25em;
+  display: inline-block;
+  padding: 0.25rem .75rem;
+  font-size: 1.5em;
 
-    a {
-        color: $text-color;
-        text-decoration: none;
-        padding: .05rem .25rem .15rem .25rem;
-        border: 2px solid transparent;
+  a {
+    color: $text-color;
+    text-decoration: none;
+    padding: .05rem 0rem .5rem 0rem;
     }
 
     a:focus,
     a:hover,
     a.current {
-        border: 2px solid $text-color;
-        border-radius: 3px;
+      background-image: url("/images/border-vector-single.svg");
+      background-repeat: no-repeat;
+      display: block;
+      background-size: 4em auto;
+      background-position: bottom;
     }
 }
 /* Keep the footer footed*/
@@ -261,4 +264,6 @@ body {
 
 footer {
     margin-top: auto;
+    padding: 1rem;
+    text-align: center;
 }
