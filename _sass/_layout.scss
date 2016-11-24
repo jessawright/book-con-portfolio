@@ -28,8 +28,8 @@ body {
 
 h1 {
     font-size: 3.5rem;
-    line-height: 1.4;
-    margin: 0;
+    line-height: 1;
+    margin: .4em 0 .2em 0;
     padding: 0;
     border: 0;
     vertical-align: bottom;
@@ -38,7 +38,7 @@ h1 {
 h2 {
     font-size: 2.25em;
     line-height: 1.25;
-    margin: 0;
+    margin: .4em 0 .2em 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
@@ -47,7 +47,7 @@ h2 {
 h3 {
     font-size: 1.75em;
     line-height: 1.25;
-    margin: 0;
+    margin: .4em 0 .2em 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
@@ -62,7 +62,7 @@ h4 {
     vertical-align: baseline;
 }
 p {
-font-size: 1.25rem;
+  font-size: 1.25rem;
   line-height: 1.25;
   margin: 0;
   padding: 0;
@@ -133,7 +133,6 @@ nav,
 object,
 output,
 ruby,
-section,
 sub,
 summary,
 sup,
@@ -268,10 +267,6 @@ nav {
 
 main {
   padding: 0 2rem;
-
-  h2 {
-
-  }
 }
 
 /* Footer */
@@ -290,4 +285,16 @@ footer {
     background-position: top;
     background-size: auto .75rem;
 
+}
+.bullet {
+  height: .4em;
+  width: .4em;
+  padding: 0 .4em .1em .4em;
+
+}
+li {
+  line-height: 1.25;
+}
+section {
+  margin: 1rem 0;
 }
